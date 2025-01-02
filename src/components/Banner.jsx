@@ -118,7 +118,7 @@ const Banner = () => {
               {/* <!-- Image Container --> */}
               <div className="relative rounded-full">
                 <img
-                  src="/src/assets/jbl.png"
+                  src="/assets/jbl.png"
                   alt="Speaker"
                   className="w-full max-w-sm md:max-w-md"
                 />

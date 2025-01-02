@@ -5,7 +5,6 @@ import Products from "../components/Products";
 import Banner from "../components/Banner";
 import NewArrival from "../components/NewArrival";
 import Service from "../components/Service";
-import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
