@@ -15,7 +15,7 @@ const NewArrival = () => {
           {/* <!-- PlayStation 5 Section --> */}
           <div className="relative bg-black text-white rounded-lg overflow-hidden">
             <img
-              src="/src/assets/playstation.png"
+              src="/assets/playstation.png"
               alt="PlayStation 5"
               className="w-full h-full object-cover opacity-80"
             />
@@ -35,7 +35,7 @@ const NewArrival = () => {
             {/* <!-- Women's Collections --> */}
             <div className="relative md:col-span-2 bg-black text-white rounded-lg overflow-hidden">
               <img
-                src="/src/assets/women.png"
+                src="/assets/women.png"
                 alt="Women's Collections"
                 className="w-full h-full object-cover opacity-80"
               />
@@ -55,7 +55,7 @@ const NewArrival = () => {
             {/* <!-- Speakers --> */}
             <div className="relative bg-black text-white rounded-lg overflow-hidden">
               <img
-                src="/src/assets/speakers.png"
+                src="/assets/speakers.png"
                 alt="Speakers"
                 className="w-full h-full object-cover opacity-80"
               />
@@ -71,7 +71,7 @@ const NewArrival = () => {
             {/* <!-- Perfume --> */}
             <div className="relative bg-black text-white rounded-lg overflow-hidden">
               <img
-                src="/src/assets/gucci.png"
+                src="/assets/gucci.png"
                 alt="Perfume"
                 className="w-full h-full object-cover opacity-80"
               />

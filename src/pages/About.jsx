@@ -44,17 +44,17 @@ const About = () => {
     {
       name: "Tom Cruise",
       role: "Founder & Chairman",
-      imgSrc: "/src/assets/about1.png",
+      imgSrc: "/assets/about1.png",
     },
     {
       name: "Scarlett Johansson",
       role: "Chief Marketing Officer",
-      imgSrc: "/src/assets/about2.png",
+      imgSrc: "/assets/about2.png",
     },
     {
       name: "Robert Downey Jr.",
       role: "Chief Technical Officer",
-      imgSrc: "/src/assets/about3.png",
+      imgSrc: "/assets/about3.png",
     },
   ];
 
@@ -85,7 +85,7 @@ const About = () => {
           {/* Right Content */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/src/assets/about.png"
+              src="/assets/about.png"
               alt="About Us"
               className="w-full max-w-md md:max-w-full md:h-auto"
             />

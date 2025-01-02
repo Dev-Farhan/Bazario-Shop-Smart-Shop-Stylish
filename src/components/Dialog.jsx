@@ -55,7 +55,7 @@ export default function CartDialog({ open, setOpen }) {
                   {cart.length === 0 ? (
                     <div className="flex flex-col items-center justify-center h-full text-center text-gray-500">
                       <img
-                        src="/src/assets/empty-cart.png" // Corrected the file path
+                        src="/assets/empty-cart.png" // Corrected the file path
                         alt="Empty Cart"
                         className="mx-auto mt-4 w-32 h-32 object-contain"
                       />
