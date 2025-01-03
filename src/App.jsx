@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/[product]";
+import PageNotFound from "./pages/404";
 
 function App() {
   return (
@@ -13,11 +14,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/product/:productId" element={<ProductDetail />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </Router>

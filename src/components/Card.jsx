@@ -17,10 +17,7 @@ const Card = ({ title, price, image, product }) => {
   };
 
   return (
-    <div
-      className="relative group border border-gray-200 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer"
-      onClick={handleCardClick}
-    >
+    <div className="relative group border border-gray-200 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
       {/* Wishlist Icon */}
       <div className="absolute top-2 right-2">
         <button
@@ -46,17 +43,19 @@ const Card = ({ title, price, image, product }) => {
           Add to cart
         </button>
       </div>
-      {/* Title */}
-      <div className="text-sm font-medium text-gray-800">{title}</div>
-      {/* Price */}
-      <div className="text-sm font-bold text-gray-900 mt-1">${price}</div>
-      {/* Rating */}
-      <div className="flex items-center mt-2">
-        {[...Array(5)].map((_, index) => (
-          <span key={index} className="text-yellow-400 text-sm">
-            ★
-          </span>
-        ))}
+      <div className="cursor-pointer " onClick={handleCardClick}>
+        {/* Title */}
+        <div className="text-sm font-medium text-gray-800">{title}</div>
+        {/* Price */}
+        <div className="text-sm font-bold text-gray-900 mt-1">${price}</div>
+        {/* Rating */}
+        <div className="flex items-center mt-2">
+          {[...Array(5)].map((_, index) => (
+            <span key={index} className="text-yellow-400 text-sm">
+              ★
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

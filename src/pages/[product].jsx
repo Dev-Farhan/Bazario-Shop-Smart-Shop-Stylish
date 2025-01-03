@@ -29,6 +29,7 @@ const ProductDetail = () => {
     };
 
     fetchProductDetail();
+    window.scrollTo(0, 0);
   }, [productId]);
 
   if (loading) {

@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="p-5 flex items-center justify-between">
+      <nav className="sticky top-0 z-50 bg-white shadow-md p-5 flex items-center justify-between">
         {/* Mobile Menu Icon */}
         <button
           className="text-xl md:hidden"
@@ -38,7 +38,6 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-
           <NavLink
             to="/contact"
             className={({ isActive }) =>
@@ -59,7 +58,7 @@ const Navbar = () => {
           >
             About
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/signup"
             className={({ isActive }) =>
               `relative transition-all duration-300 ${
@@ -68,7 +67,7 @@ const Navbar = () => {
             }
           >
             Sign Up
-          </NavLink>
+          </NavLink> */}
         </div>
 
         {/* Wishlist and Cart Icons */}
@@ -86,6 +85,7 @@ const Navbar = () => {
             )}
           </span>
         </div>
+
         {/* Full-Screen Menu */}
         <div
           className={`fixed inset-0 bg-white transform ${
@@ -111,14 +111,13 @@ const Navbar = () => {
             <Link to="/about" onClick={() => setIsMenuOpen(false)}>
               About
             </Link>
-            <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            {/* <Link to="/" onClick={() => setIsMenuOpen(false)}>
               Sign Up
-            </Link>
+            </Link> */}
           </div>
 
           <CartDialog open={open} setOpen={setOpen} />
         </div>
-        {/* <div className="bg-gray-300 w-full h-[2px] mb-10"></div> */}
       </nav>
     </>
   );
